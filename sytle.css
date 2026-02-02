@@ -1,0 +1,181 @@
+body {
+    font-family: Arial;
+    padding: 10px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+.exercicio {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.flex-container {
+    display: flex;
+}
+
+
+.flex-box {
+    background: rgba(9, 233, 65, 0.568);
+    padding: 10px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+header {
+    background: purple;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.texto-grande {
+    font-size: 30px;
+}
+
+
+
+
+.menu {
+    display: flex;
+    background: black;
+}
+
+
+.menu a {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+
+
+
+.largura-div {
+    width: 50%;
+    background: rgb(86, 2, 155);
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+.card {
+    background: red;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.img-responsiva {
+    width: 150px;
+}
+
+
+.botao {
+    padding: 15px 30px;
+    background: rgb(24, 9, 9);
+    color: white;
+    border: none;
+}
+
+
+
+
+.flex-layout {
+    display: flex;
+}
+
+
+.flex-item {
+    background: rgb(7, 187, 211);
+    color: white;
+    padding: 10px;
+    flex: 1;
+    margin: 5px;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+
+    header {
+        background: green;
+    }
+
+
+    .texto-grande {
+        font-size: 16px;
+    }
+
+
+    .largura-div {
+        width: 100%;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .img-responsiva {
+        display: none;
+    }
+
+
+    .botao {
+        padding: 5px 10px;
+    }
+
+
+    .flex-layout {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+
+
